@@ -1,5 +1,5 @@
 # VSDSquadron-mini
-Name PUNEETHRAJ K 
+Name: PUNEETHRAJ K 
 
 # Task 1: Understanding and Implementing the Verilog Code on FM
 ### 🎯 Objective
