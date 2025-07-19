@@ -234,18 +234,15 @@ Based on the decoded commands, the system activates or deactivates the connected
 
 # Task6:FPGA-Based UART-Controlled Actuator System
 ### Overview:
-Design a solution in which the FPGA interprets UART-based control inputs to manage motor direction control operation. The focus is on decoding serial inputs into direct hardware responses.
-
+This project uses an FPGA board to control the direction of a DC motor based on UART commands sent from a user. When the user types 'F' for forward or 'B' for backward, the FPGA decodes the command and sets the motor’s direction through its GPIO output to the motor driver. Two LEDs serve as visual indicators: one LED lights up when the motor spins forward, and the other lights up when the motor spins backward. Only the LED for the active direction is on at any time. This setup allows for simple and real-time motor control. It also provides clear, immediate feedback to the user and is easy to operate and test, making it ideal for learning about digital control systems.
 ### Working:
-motor is controlled based on UART instructions.on and off signal are given using two leds 
-
-Commands are issued using DOCKLIGHT.
-Upon receiving each command through UART, the FPGA activates the motor drivers enable pins sequentially — each command turns on a different enable pin in order.
+When the system is powered on, the user sends a command ('F' for forward or 'B' for backward) from a computer or microcontroller to the FPGA via UART. The FPGA receives this command and decodes it using its built-in logic. Based on the command, the FPGA sets its GPIO pins to control the motor driver, making the motor spin in the selected direction. At the same time, the FPGA turns on either the forward LED or the backward LED to indicate the current direction of the motor. Only one LED lights up at once, matching the direction the motor is moving. This allows the user to control and monitor the motor direction easily in real time.
 codes:
 
 block diagram:
-
-Implementation
+[Task 5&6/Block diagram]
+documentation:
+[Task 5&6/Documentation.md]
 
 ## FPGA-Based UART-Controlled Display System
 ### Overview:
