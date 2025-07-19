@@ -105,41 +105,27 @@ then make build and sudo make flash
 ### step4:Testing and Verification
 
 for this i have used docklight
-[docklight](./Task2/docklight%20.jpeg)
-[terminal](./Task2/terminal.jpeg)
-[result](./Task2/result.jpeg)
+
 ### step4:Documentation
-[result](./Task2/result.jpeg)
-[video](./Task2/video.mp4)
+
 
 
 # Task3:Develop a UART transmitter module capable of sending serial data from the FPGA to an external device
 
 ### step1:Study the Existing Code
-[code](./Task%203/code)
+
 
 ### step2:Design Documentation
-[blockdiagram](./Task%203/blockdiagram.jpeg)
-[cktdiagram](./Task%203/cktdiagram.jpeg)
 
 ### step3:Implementation
-[Makefile](./Task%203/Makefile)
-[top](./Task%203/top.v)
-[uart_tx](./Task%203/uart_tx)
+
 cd uart _transmission
 make build
 sudo make flash 
 ### step4:Testing and Verification
 open and install putty
 check whether u get series of d
-[putty terminal](./Task%203/putty%20terminal.jpeg)
-[video1.mp4](./Task%203/video1.mp4)
 ### step5: Documentation
-[blockdiagram](./Task%203/blockdiagram.jpeg)
-[cktdiagram](./Task%203/cktdiagram.jpeg)
-[putty terminal](./Task%203/putty%20terminal.jpeg)
-[video1.mp4](./Task%203/video1.mp4)
-[transmitted](./Task%203/transmitted.jpeg)
 
 # Task4: UART-Based Sensor Data Transmission Using FPGA
 
@@ -153,18 +139,15 @@ A sensor interface module that reads data from the connected sensor.
 A UART transmitter module that serializes the sensor data and transmits it asynchronously.
 An optional baud rate generator to ensure accurate UART timing.
 Once the system is programmed onto the FPGA, real-time sensor data is continuously or conditionally transmitted to an external device such as a PC, where it can be viewed using terminal software (e.g., Docklight or PuTTY).
-[code](./Task%204/code)
-[putty](./Task%204/putty%20terminal1.jpeg)
+
  ### Applications
 Real-time environmental monitoring (temperature, humidity, etc.)
 Industrial sensor networks
 Data logging systems
 IoT edge devices
-[blockdiagram](./Task%204/blockdiagram1.jpeg)
-[ckt](./Task%204/ckt.jpeg)
+
+
 ### result
-[output](./Task%204/output.jpeg)
-[video](./Task%204/video2.mp4)
 
 # Task5:Theme 1: FPGA-Based UART-Controlled Display System
 ### Project Summary
@@ -259,14 +242,11 @@ motor is controlled based on UART instructions.on and off signal are given using
 Commands are issued using DOCKLIGHT.
 Upon receiving each command through UART, the FPGA activates the motor drivers enable pins sequentially — each command turns on a different enable pin in order.
 codes:
-[Makefile](./Task6/Makefile)
-[pcf file ](./Task6/ledconstraints.pcf)
-[top.v](./Task6/ledtop.v)
-[uart_trx](./Task6/uart_trx.v)
+
 block diagram:
-[blockdiagram](./Task6/Actuator.jpeg)
+
 Implementation
-[video](./Task6/actuator.mp4)
+
 ## FPGA-Based UART-Controlled Display System
 ### Overview:
 Create a system where the FPGA accepts data through a UART interface and outputs it on a display device such as a 7-segment or LCD screen. The project highlights the ability to capture and visualize data in real-time.
@@ -274,15 +254,10 @@ Create a system where the FPGA accepts data through a UART interface and outputs
 A 7-segment display is interfaced with the FPGA board.
 The FPGA receives input commands from the DOCKLIGHT terminal software.
 As data is transmitted via UART, the display updates by incrementing the shown number with each received command.
-[Makefile](./Task6/Makefile)
-[top.v](./Task6/top.v)
-[uart_rx](./Task6/uart_rx%20.v)
-[seven_seg_decoder](./Task6/seven_seg_decoder.v)
-[pcf file ](./Task6/constraints.pcf)
 block diagram:
-[blockdiagram](./Task6/segment.jpeg)
+
 Implementation
-[video](./Task6/sevensegment.mp4)
+
 # Task6:Based UART-Controlled Display System 
 ## UART-Controlled FPGA Alert & Display System
 This project demonstrates a real-time UART-controlled visual and auditory alert system implemented on the VSDSquadron FPGA Mini Board. It receives characters via UART, interprets them, and provides feedback using a 7-segment display, LED, and buzzer.
@@ -315,10 +290,4 @@ top_module.v – Top-level module integrating all components
 6. If a critical character (like 'A' or 'G') is received, the buzzer beeps.
 
    # Results
-   [Makefile](./Task6-new/Makefile)
-[top.v](./Task6-new/top.v)
-[uart_rx](./Task6-new/uart_rx.v)
-[seven_seg_decoder](./Task6-new/seven_seg_decoder.v)
-[pcf file ](./Task6-new/constraints.pcf)
-   [video](./Task6-new/seven1.mp4)
-
+   
