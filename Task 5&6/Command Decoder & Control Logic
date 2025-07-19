@@ -1,0 +1,37 @@
+module direction_control(
+    input  wire clk,
+    input  wire rst,
+    input  wire data_ready,
+    input  wire [7:0] data_byte,
+    output reg motor_fwd,
+    output reg motor_rev,
+    output reg led_fwd,
+    output reg led_rev
+);
+
+always @(posedge clk or posedge rst) begin
+    if (rst) begin
+        motor_fwd <= 0;
+        motor_rev <= 0;
+        led_fwd <= 0;
+        led_rev <= 0;
+    end else if (data_ready) begin
+        case (data_byte)
+            "F": begin // Forward command
+                motor_fwd <= 1;
+                motor_rev <= 0;
+                led_fwd   <= 1;
+                led_rev   <= 0;
+            end
+            "B": begin // Backward command
+                motor_fwd <= 0;
+                motor_rev <= 1;
+                led_fwd   <= 0;
+                led_rev   <= 1;
+            end
+            default: ; // Ignore other characters
+        endcase
+    end
+end
+
+endmodule
