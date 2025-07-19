@@ -47,7 +47,7 @@ Connections: Each color output is connected to its respective LED pin (led_red, 
 This module provides a self-contained setup to control RGB LEDs using an internal clock and a counter. It keeps the blue LED on while offering a simple way to verify internal timing using a test pin. It’s optimized for easy integration on FPGA boards without extra components.
 ### Step 2: Creating the PCF File
 
-- 📌 [Pin Mapping](./Task1/pin%20mapping)
+- 📌 [https://github.com/Puneethrajk-Sahyadri-ECE/VSDFPGA/blob/main/Task%201]
 - led_red (Pin 39):
 
 This pin is assigned to control the red LED on the FPGA board. The red LED might indicate an error state, status, or be used for any specific condition in your system.
