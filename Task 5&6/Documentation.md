@@ -48,7 +48,4 @@ Simple FPGA code handles UART, direction, and LED control.
 System is easy to use and test.
 
 # Project Structure
-top.v — Top-level module integrating UART RX and LED control logic.
-uart_rx.v — UART receiver module (8 data bits, no parity, 1 stop bit).
-vsdsquadron.pcf — Pin constraints file mapping FPGA pins to LEDs and UART signals.
-Makefile — Build, flash, and terminal interface automation using yosys, nextpnr, and iceprog.
+The project structure includes connecting the FPGA to a motor driver, LEDs, and UART, with HDL modules for UART, command decoding, motor, and LED control, and using a PC terminal to send commands. All modules are integrated and programmed onto the FPGA for easy operation.
