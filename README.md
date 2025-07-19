@@ -240,51 +240,11 @@ When the system is powered on, the user sends a command ('F' for forward or 'B' 
 codes:
 
 block diagram:
-[Task 5&6/Block diagram]
-documentation:
-[Task 5&6/Documentation.md]
+[https://github.com/Puneethrajk-Sahyadri-ECE/VSDFPGA/blob/main/Task%205%266/Block%20diagram]
 
-## FPGA-Based UART-Controlled Display System
-### Overview:
-Create a system where the FPGA accepts data through a UART interface and outputs it on a display device such as a 7-segment or LCD screen. The project highlights the ability to capture and visualize data in real-time.
-### Working:
-A 7-segment display is interfaced with the FPGA board.
-The FPGA receives input commands from the DOCKLIGHT terminal software.
-As data is transmitted via UART, the display updates by incrementing the shown number with each received command.
-block diagram:
-
-Implementation
-
-# Task6:Based UART-Controlled Display System 
-## UART-Controlled FPGA Alert & Display System
-This project demonstrates a real-time UART-controlled visual and auditory alert system implemented on the VSDSquadron FPGA Mini Board. It receives characters via UART, interprets them, and provides feedback using a 7-segment display, LED, and buzzer.
-
-## 🚀 Features
- Receives characters (A–G) over UART.
- Displays corresponding numeric codes or characters on a 7-segment display.
- Continuously lights up an onboard LED to indicate the system is powered and running.
- Activates a buzzer on specific critical characters (e.g., A or G) as alerts.
- 
-## 🛠️ Hardware Used
-VSDSquadron FPGA Mini Board
- 7-Segment Display
- LED
- Buzzer
- UART interface (e.g., via Docklight or serial terminal)
- 
-## 🧩 Verilog Modules
-uart_rx.v – UART receiver module
-seven_seg_display.v – 7-segment driver
-buzzer.v – Controls buzzer for alert conditions
-top_module.v – Top-level module integrating all components
-
-## ⚙️ How It Works
-1. Send a character (A-G) from a serial terminal (Docklight) .
-2. FPGA receives the UART data.
-3. The decoder determines the corresponding segment pattern.
-4. The character is shown on the 7-segment display.
-5. The LED remains ON at all times.
-6. If a critical character (like 'A' or 'G') is received, the buzzer beeps.
+documentation:[https://github.com/Puneethrajk-Sahyadri-ECE/VSDFPGA/blob/main/Task%205%266/Documentation.md]
 
    # Results
+   demo video 
+   [https://github.com/Puneethrajk-Sahyadri-ECE/VSDFPGA/blob/main/Task%205%266/UART%20direction%20control%20demo.mp4]
    
