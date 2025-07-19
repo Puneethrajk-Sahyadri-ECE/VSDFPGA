@@ -90,7 +90,7 @@ The project implements a basic UART loopback system using three Verilog modules:
 [https://github.com/Puneethrajk-Sahyadri-ECE/VSDFPGA/blob/main/Task%202]
 ### Step 2:Design Documentation
 here is the block diagram 
- [block diagram](./Task2/block%20diagram.jpeg)
+[ https://github.com/Puneethrajk-Sahyadri-ECE/VSDFPGA/blob/main/Task2/block%20diagram.jpeg]
  ### Step 3:Implementation
 [Makefile](./Task2/Makefile)
  [Top module](./Task2/Top%20module)
