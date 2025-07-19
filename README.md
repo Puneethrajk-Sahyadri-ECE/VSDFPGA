@@ -8,7 +8,7 @@ This project aims to understand and implement Verilog code on the [VSDSquadron F
 
 ### Step 1: Understanding the Verilog Code
 This task involves analyzing the Verilog design, mapping pins, and flashing the code to the VSDSquadron FPGA Mini board.
-📜 [Verilog Code](./Task1/verilog%20code)
+📜 [https://github.com/Puneethrajk-Sahyadri-ECE/VSDFPGA/blob/main/Task%201](./Task1/verilog%20code)
 ### Verilog Code Summary
 - The module generates a signal using an internal clock (SB_HFOSC).
 - The top module controls an RGB LED using internal logic.
