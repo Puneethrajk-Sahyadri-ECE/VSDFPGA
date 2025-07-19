@@ -1,35 +1,34 @@
-# Theme 1
-## FPGA-Based UART-Controlled Display System
-
-### Overview
-This project implements a system where an FPGA receives serial data over UART and dynamically displays it on an output device — 7-segment display. It demonstrates how FPGAs can be used to bridge communication and real-time display systems.
-The system responds to user input sent via UART (e.g., from a computer terminal or microcontroller) and updates the displayed value accordingly. Pressing respective keys displays corresponding numbers.
-
-### System Architecture
-Key Modules:
-
-- UART Receiver (uart_rx_8n1)
-- Input Decoder and Display Controller
-- 7-Segment Driver
-
-### How to Use
-- Build the project: make build
-
-- Flash the bitstream to your FPGA: sudo make flash
-
-- Open a serial terminal at 9600 baud: Example: PuTTY
-
-- Type any number via UART and it will be displayed on the seven segment.
-
 # Theme 2
 ## FPGA-Based UART-Controlled Actuator System
 
 ### Overview
-This project demonstrates a simple yet effective system where an FPGA receives control commands via UART and operates actuators accordingly. Specifically, this design controls a set of LEDs to visually indicate received commands, cycling through the following states with each valid UART input:
+This project demonstrates a simple The project uses the VSDSquadron FM FPGA board.
 
-All LEDs OFF → 1 LED ON → 2 LEDs ON → 3 LEDs ON → All LEDs OFF → Repeat
+The user connects to the board through a serial UART interface.
 
-This project exemplifies how to decode serial UART commands and translate them into physical outputs on FPGA pins, forming the basis for controlling actuators like motors, LEDs, or relays.
+Commands like 'F' (forward) or 'B' (backward) are sent from a computer.
+
+The FPGA receives each command and decodes it.
+
+Control logic inside the FPGA decides the motor’s direction.
+
+The FPGA uses GPIO pins to send signals to a motor driver circuit.
+
+The motor driver powers the motor in the chosen direction.
+
+Two LEDs are also connected to the FPGA.
+
+The FPGA turns on the forward LED when the motor spins forward.
+
+It turns on the backward LED when the motor spins backward.
+
+Only one LED is on at a time, matching the motor’s movement.
+
+The system gives real-time response to user input.
+
+This shows how FPGAs can control hardware based on serial communication.
+
+The project is simple but highlights core concepts in digital design and control.
 
 ### System Architecture
 Key components:
