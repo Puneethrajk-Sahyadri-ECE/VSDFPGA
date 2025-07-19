@@ -81,9 +81,6 @@ Ran make build to compile the Verilog design successfully.
 Used sudo make flash to program the FPGA.
 
 Observed the RGB LED on the VSDSquadron board to verify that the expected behavior was achieved, confirming successful programming of the FPGA.
-### Step 4: Final documentation
-[video](./Task1/WhatsApp%20Video%202025-04-22%20at%2010.15.51%20PM.mp4).
-led remains blinking 
 
 # Task 2:Implement a UART loopback mechanism
 ### Objective: 
