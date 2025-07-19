@@ -92,9 +92,9 @@ The project implements a basic UART loopback system using three Verilog modules:
 here is the block diagram 
 [ https://github.com/Puneethrajk-Sahyadri-ECE/VSDFPGA/blob/main/Task2/block%20diagram.jpeg]
  ### Step 3:Implementation
-[Makefile](./Task2/Makefile)
- [Top module](./Task2/Top%20module)
-  [uart pcf](./Task2/uart%20pcf)
+[top.json](./Task2/Makefile)
+ [top.asc](./Task2/Top%20module)
+  [uart_trx.v](./Task2/uart%20pcf)
 Then go to terminal 
 cd
 cd VSDSquadron-mini
