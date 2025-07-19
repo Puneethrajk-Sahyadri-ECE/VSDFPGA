@@ -1,5 +1,5 @@
 # VSDSquadron-mini
-Name:Apoorva Nagekar
+Name PUNEETHRAJ K 
 
 # Task 1: Understanding and Implementing the Verilog Code on FM
 ### 🎯 Objective
@@ -255,12 +255,13 @@ Based on the decoded commands, the system activates or deactivates the connected
 
 # Task6:FPGA-Based UART-Controlled Actuator System
 ### Overview:
-Design a solution in which the FPGA interprets UART-based control inputs to manage LED operation. The focus is on decoding serial inputs into direct hardware responses.
+Design a solution in which the FPGA interprets UART-based control inputs to manage motor direction control operation. The focus is on decoding serial inputs into direct hardware responses.
 
 ### Working:
-Three separate LEDs are controlled based on UART instructions.
+motor is controlled based on UART instructions.on and off signal are given using two leds 
+
 Commands are issued using DOCKLIGHT.
-Upon receiving each command through UART, the FPGA activates the LEDs sequentially — each command turns on a different LED in order.
+Upon receiving each command through UART, the FPGA activates the motor drivers enable pins sequentially — each command turns on a different enable pin in order.
 codes:
 [Makefile](./Task6/Makefile)
 [pcf file ](./Task6/ledconstraints.pcf)
