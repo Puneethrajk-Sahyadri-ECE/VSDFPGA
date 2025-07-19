@@ -1,0 +1,6 @@
+set_property PACKAGE_PIN V10 [get_ports {uart_rx}]
+set_property PACKAGE_PIN P1  [get_ports {MOTOR_FWD}]
+set_property PACKAGE_PIN P2  [get_ports {MOTOR_REV}]
+set_property PACKAGE_PIN N15 [get_ports {LED_FWD}]
+set_property PACKAGE_PIN N16 [get_ports {LED_REV}]
+set_property IOSTANDARD LVCMOS33 [get_ports {uart_rx MOTOR_FWD MOTOR_REV LED_FWD LED_REV}]
