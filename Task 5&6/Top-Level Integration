@@ -1,0 +1,35 @@
+module top(
+    input  wire clk,
+    input  wire rst,
+    input  wire uart_rx,
+    output wire MOTOR_FWD,
+    output wire MOTOR_REV,
+    output wire LED_FWD,
+    output wire LED_REV
+);
+
+// Instantiate UART receiver
+wire       data_ready;
+wire [7:0] data_byte;
+
+uart_rx uart_rx_inst (
+    .clk(clk),
+    .rst(rst),
+    .rx(uart_rx),
+    .data_ready(data_ready),
+    .data_byte(data_byte)
+);
+
+// Instantiate direction control
+direction_control dir_ctrl_inst (
+    .clk(clk),
+    .rst(rst),
+    .data_ready(data_ready),
+    .data_byte(data_byte),
+    .motor_fwd(MOTOR_FWD),
+    .motor_rev(MOTOR_REV),
+    .led_fwd(LED_FWD),
+    .led_rev(LED_REV)
+);
+
+endmodule
