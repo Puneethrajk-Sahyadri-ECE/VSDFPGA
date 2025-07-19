@@ -31,12 +31,7 @@ This shows how FPGAs can control hardware based on serial communication.
 The project is simple but highlights core concepts in digital design and control.
 
 ### System Architecture
-Key components:
-
-- UART Receiver Module: Receives and decodes serial data.
-- Control Logic: Manages LED states based on received commands.
-- Output Pins: Drive LEDs to reflect current actuator state.
-
+This project implements a motor direction control system using the VSDSquadron FM FPGA board, with user input via UART and visual feedback through two LEDs. The user sends serial commands ('F' for forward, 'B' for backward) using a UART terminal, such as a PC or microcontroller. The FPGA receives and decodes these commands, then drives the motor in the selected direction through a GPIO-controlled motor driver. Simultaneously, the FPGA lights up one of two LEDs to indicate the current direction—forward or backward—making the system interactive and user-friendly. This approach demonstrates the practical use of FPGA architecture for real-time digital control, paralleling many industrial and educational applications where flexible, reliable, and reconfigurable logic is required for motor drive tasks. The design is simple, modular, and can be extended with additional features like speed control or feedback in advanced versions.
 ### How to Use
 - Build the project: make build
 
